@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta
+    name="description"
+    content="A modern responsive landing page built with HTML, CSS and JavaScript."
+  />
+
+  <title>Prince | Front-End Developer</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <header class="header">
+    <nav class="navbar">
+      <a href="#home" class="logo">Coding<span>Academy</span></a>
+
+      <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation menu">
+        ☰
+      </button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <main>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="welcome">WELCOME TO MY PROJECT</p>
+
+            <h1>
+                    Hi, I'm Prince.
+                <span>Front-End Developer</span>
+            </h1>
+
+     
+        <p class="hero-text">
+            I build responsive, accessible, and user-friendly websites using HTML,
+            CSS, and JavaScript.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#features" class="btn btn-primary">Explore Features</a>
+          <a href="#about" class="btn btn-secondary">Learn More</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="code-card">
+          <div class="card-header">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <pre>
+&lt;html&gt;
+  &lt;code&gt;
+    Create.
+    Learn.
+    Build.
+  &lt;/code&gt;
+&lt;/html&gt;
+          </pre>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Features Section -->
+    <section class="features section" id="features">
+        <div class="section-heading">
+            <p>MY STRENGTHS</p>
+                <h2>What I Bring to Every Project</h2>
+            <p>
+                I create websites that are attractive, functional, and easy to use.
+            </p>
+        </div>
+
+      <div class="features-grid">
+        <article class="feature-card">
+            <div class="icon">📱</div>
+            <h3>Responsive Design</h3>
+        <p>
+            Websites that look and work well on phones, tablets, and desktops.
+        </p>
+        </article>
+
+        <article class="feature-card">
+            <div class="icon">🎨</div>
+            <h3>Creative Interfaces</h3>
+        <p>
+            Clean and engaging layouts designed to provide a great user experience.
+        </p>
+        </article>
+
+        <article class="feature-card">
+            <div class="icon">⚡</div>
+            <h3>Fast Performance</h3>
+        <p>
+            Lightweight pages that load quickly and provide smooth interactions.
+        </p>
+        </article>
+
+        <article class="feature-card">
+            <div class="icon">♿</div>
+            <h3>Accessible Development</h3>
+        <p>
+            Semantic and inclusive websites that are easy for everyone to use.
+        </p>
+        </article>
+        </div>
+    </section>
+
+
+    <!-- About Section -->
+    <section class="about section" id="about">
+      <div class="about-content">
+
+        <div>
+            <p class="section-label">ABOUT ME</p>
+
+            <h2>Turning Ideas into Digital Experiences</h2>
+
+        <p>
+            I am Prince, an aspiring Front-End Developer passionate about creating
+            responsive, accessible, and visually engaging websites.
+        </p>
+
+        <p>
+            I am currently developing my skills through the Codveda Technology
+            Front-End Development Internship, where I build practical projects
+            using HTML, CSS, and JavaScript.
+        </p>
+
+        <p>
+            My goal is to keep learning, solve real-world problems, and create
+            digital experiences that are both useful and enjoyable.
+        </p>
+
+            <a href="#contact" class="btn btn-primary">Let's Work Together</a>
+        </div>
+
+        <div class="skill">
+            <span>HTML5</span>
+            <div class="progress">
+            <div class="progress-bar html"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+            <span>CSS3</span>
+            <div class="progress">
+            <div class="progress-bar css"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+            <span>JavaScript</span>
+            <div class="progress">
+                 <div class="progress-bar js"></div>
+            </div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section class="contact section" id="contact">
+
+      <div class="section-heading">
+        <p>GET IN TOUCH</p>
+            <h2>Let's Build Something Great</h2>
+        <p>
+            Have a project idea or opportunity? I would be happy to connect with you.
+        </p>
+     </div>
+
+       <div class="contact-links">
+            <a href="mailto:your@email.com" class="btn btn-primary">
+                 Email Me
+            </a>
+
+        <a
+            href="https://github.com/yourusername"
+            class="btn btn-secondary"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            View My GitHub
+        </a>
+        </div>
+    </section>
+
+  </main>
+
+
+  <!-- Footer -->
+  <footer class="footer">
+
+    <div>
+      <a href="#home" class="logo">Coding<span>Academy</span></a>
+
+      <p>
+        Building responsive and accessible digital experiences with passion.
+      </p>
+    </div>
+
+    <p class="copyright">
+      © <span id="year"></span> Prince. All rights reserved.
+    </p>
+
+  </footer>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
