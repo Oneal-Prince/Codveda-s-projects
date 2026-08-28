@@ -134,7 +134,6 @@ function validatePassword() {
 
     return false;
   }
-
   passwordError.textContent = "";
   passwordInput.classList.remove("error");
   passwordInput.classList.add("success");
