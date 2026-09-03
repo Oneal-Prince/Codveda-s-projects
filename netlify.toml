@@ -1,0 +1,9 @@
+[build]
+  base = "Codveda-Tambo-Prince/Level(2)/Task1/Single Page Application"
+  command = "npm ci --include=dev && npm run build"
+  publish = "dist"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
