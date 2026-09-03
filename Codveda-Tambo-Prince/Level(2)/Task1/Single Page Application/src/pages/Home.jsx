@@ -1,15 +1,22 @@
+import { useAppContext } from "../context/AppContext";
 function Home() {
+    const { userName,
+    setUserName} = useAppContext();
     return ( 
        <section className="page">
 
-            <h1>Welcome to My Portfolio</h1>
+            <h1>Welcome {userName}!</h1>
 
                 <p>
-                    I'm a frontend developer who builds modern
-                    and responsive web applications.
+                     Welcome to my React Single Page Application.
             </p>
-
-        <button>Explore My Work</button>
+            <input
+              type="text"
+              placeholder="Enter your name"
+              value={userName}
+              onChange={(e) => setUserName(e.target.value)}
+            />
+            
       </section>
      );
 }

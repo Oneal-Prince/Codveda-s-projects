@@ -1,8 +1,11 @@
+import { useAppContext } from "../context/AppContext";
 function About() {
+    const { userName } = useAppContext();
     return ( 
          <section className="page">
 
             <h1>About Me</h1>
+            <p>Hello, I'm {userName}!</p>
 
                 <p>
                     I am a frontend developer interested in
