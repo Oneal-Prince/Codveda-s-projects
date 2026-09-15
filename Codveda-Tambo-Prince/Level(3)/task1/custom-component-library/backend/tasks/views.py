@@ -4,6 +4,7 @@ from django.contrib.auth import login
 from .forms import RegisterForm
 from .models import Task
 from django.contrib.auth.decorators import login_required
+from .forms import RegisterForm, TaskForm
 
 
 def home(request):
@@ -36,3 +37,29 @@ def register(request):
 @login_required
 def dashboard(request):
     return render(request, "tasks/dashboard.html")
+
+@login_required
+def create_task(request):
+
+    if request.method == "POST":
+
+        form = TaskForm(request.POST)
+
+        if form.is_valid():
+
+            task = form.save(commit=False)
+
+            task.user = request.user
+
+            task.save()
+
+            return redirect("dashboard")
+
+    else:
+        form = TaskForm()
+
+    return render(
+        request,
+        "tasks/task_form.html",
+        {"form": form}
+    )

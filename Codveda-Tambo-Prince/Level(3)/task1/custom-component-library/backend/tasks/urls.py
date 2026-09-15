@@ -8,5 +8,6 @@ urlpatterns = [
     path("register/", views.register, name="register"),
     path("dashboard/", views.dashboard, name="dashboard"),
     path("", include("django.contrib.auth.urls")),
-
+    
+    path("tasks/create/", views.create_task, name="create_task"),
 ]
