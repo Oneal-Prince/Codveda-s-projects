@@ -3,6 +3,7 @@ from django.shortcuts import render, redirect
 from django.contrib.auth import login
 from .forms import RegisterForm
 from .models import Task
+from django.contrib.auth.decorators import login_required
 
 
 def home(request):
@@ -32,5 +33,6 @@ def register(request):
         "registration/register.html",
         {"form": form}
     )
+@login_required
 def dashboard(request):
     return render(request, "tasks/dashboard.html")
