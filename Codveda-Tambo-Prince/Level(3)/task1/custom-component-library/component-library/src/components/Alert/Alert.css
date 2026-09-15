@@ -1,0 +1,70 @@
+.ui-alert {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 16px;
+    border-radius: 10px;
+    border: 1px solid;
+}
+
+.ui-alert-content {
+    flex: 1;
+}
+
+.ui-alert-title {
+    margin: 0 0 4px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.ui-alert-message {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.ui-alert-info {
+    background: #eff6ff;
+    border-color: #93c5fd;
+    color: #1e40af;
+}
+
+.ui-alert-success {
+    background: #f0fdf4;
+    border-color: #86efac;
+    color: #166534;
+}
+
+.ui-alert-warning {
+    background: #fffbeb;
+    border-color: #fcd34d;
+    color: #92400e;
+}
+
+.ui-alert-error {
+    background: #fef2f2;
+    border-color: #fca5a5;
+    color: #991b1b;
+}
+
+.ui-alert-dismiss {
+    border: none;
+    background: transparent;
+    color: inherit;
+    font-size: 22px;
+    line-height: 1;
+    padding: 2px 6px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.ui-alert-dismiss:hover {
+    background: rgba(0, 0, 0, 0.08);
+}
+
+.ui-alert-dismiss:focus-visible {
+    outline: 3px solid currentColor;
+    outline-offset: 2px;
+}

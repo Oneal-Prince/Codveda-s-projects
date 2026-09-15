@@ -1,0 +1,42 @@
+.ui-card {
+    width: 100%;
+    box-sizing: border-box;
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.06);
+}
+
+.ui-card-small {
+    padding: 16px;
+}
+
+.ui-card-medium {
+    padding: 24px;
+}
+
+.ui-card-large {
+    padding: 32px;
+}
+
+.ui-card-header {
+    margin-bottom: 20px;
+}
+
+.ui-card-title {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+.ui-card-description {
+    margin: 6px 0 0;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #64748b;
+}
+
+.ui-card-content {
+    width: 100%;
+}
