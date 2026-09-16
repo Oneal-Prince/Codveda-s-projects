@@ -1,0 +1,7 @@
+node_modules/
+.storybook/
+debug-storybook.log
+*.log
+dist/
+coverage/
+.vite/
