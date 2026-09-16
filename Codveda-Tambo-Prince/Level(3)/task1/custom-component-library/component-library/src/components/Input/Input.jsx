@@ -16,11 +16,16 @@ function Input({
     return (
         <div className="ui-input-group">
 
-            <label htmlFor={id} className="ui-input-label">
+            <label
+                htmlFor={id}
+                className="ui-input-label"
+            >
                 {label}
 
                 {required && (
-                    <span aria-hidden="true"> *</span>
+                    <span aria-hidden="true">
+                        {" "}*
+                    </span>
                 )}
             </label>
 
@@ -34,7 +39,9 @@ function Input({
                 required={required}
                 disabled={disabled}
                 aria-invalid={error ? "true" : "false"}
-                aria-describedby={error ? errorId : undefined}
+                aria-describedby={
+                    error ? errorId : undefined
+                }
                 className={`ui-input ${
                     error ? "ui-input-error" : ""
                 }`}

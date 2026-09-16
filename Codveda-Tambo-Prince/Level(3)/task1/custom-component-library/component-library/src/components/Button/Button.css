@@ -49,3 +49,11 @@
 .button-danger:hover {
   background: #b91c1c;
 }
+.ui-button:focus-visible {
+    outline: 3px solid #93c5fd;
+    outline-offset: 2px;
+}
+.ui-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}

@@ -1,22 +1,24 @@
 import "./Button.css";
 
 function Button({
-  children,
-  variant = "primary",
-  type = "button",
-  disabled = false,
-  onClick,
+    children,
+    variant = "primary",
+    type = "button",
+    onClick,
+    disabled = false,
+    ariaLabel
 }) {
-  return (
-    <button
-      type={type}
-      className={`button button-${variant}`}
-      disabled={disabled}
-      onClick={onClick}
-    >
-      {children}
-    </button>
-  );
+    return (
+        <button
+            type={type}
+            className={`ui-button ui-button-${variant}`}
+            onClick={onClick}
+            disabled={disabled}
+            aria-label={ariaLabel}
+        >
+            {children}
+        </button>
+    );
 }
 
 export default Button;
